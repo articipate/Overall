@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overall</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">
+      <img src="Logos/Overall_Small_Logo.png" alt="Overall">
+      <div class="navbar-brand-text">
+        <span>OVERALL</span>
+        <small class="navbar-powered">Powered by <a href="https://huggingface.co" target="_blank">Hugging Face</a></small>
+      </div>
+    </a>
+    <div class="navbar-links">
+      <a href="models.html"><img src="Icons/Pages/Overall_Models_Icon.png" class="nav-icon"><span data-i18n="nav_models">MODELS</span></a>
+      <a href="datasets.html"><img src="Icons/Pages/Overall_Datasets_Icon.png" class="nav-icon"><span data-i18n="nav_datasets">DATASETS</span></a>
+      <a href="developer.html"><img src="Icons/Pages/Overall_Developer_Bag_Icon.png" class="nav-icon"><span data-i18n="nav_developer">DEVELOPER BAG</span></a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="hero">
+      <img src="Logos/Overall_Long_Logo.png" alt="Overall" class="hero-logo">
+      <p class="hero-desc" data-i18n="hero_desc">Hugging Face uzerindeki modelleri, datasetleri ve AI gelistirme araclarini kesfedin</p>
+      <p class="hero-powered">Powered by <a href="https://huggingface.co" target="_blank">Hugging Face</a></p>
+    </div>
+
+    <div class="stats-bar">
+      <div class="stats-card">
+        <img src="Icons/Pages/Overall_Models_Icon.png" class="stats-card-icon" alt="Models">
+        <span class="stats-card-value" id="stat-models">...</span>
+        <span class="stats-card-label" data-i18n="stat_total_models">Toplam Model</span>
+      </div>
+      <div class="stats-card">
+        <img src="Icons/Pages/Overall_Datasets_Icon.png" class="stats-card-icon" alt="Datasets">
+        <span class="stats-card-value" id="stat-datasets">...</span>
+        <span class="stats-card-label" data-i18n="stat_total_datasets">Toplam Dataset</span>
+      </div>
+      <div class="stats-card">
+        <img src="Icons/Cards/Overall_Total_Dowloading_Icon.png" class="stats-card-icon" alt="Downloads">
+        <span class="stats-card-value" id="stat-downloads">...</span>
+        <span class="stats-card-label" data-i18n="stat_total_downloads">Toplam Indirme</span>
+      </div>
+      <div class="stats-card">
+        <img src="Icons/Cards/Overall_Total_Likes_Icon.png" class="stats-card-icon" alt="Likes">
+        <span class="stats-card-value" id="stat-likes">...</span>
+        <span class="stats-card-label" data-i18n="stat_total_likes">Toplam Begeni</span>
+      </div>
+    </div>
+
+    <div class="home-cards">
+      <a href="models.html" class="home-card">
+        <img src="Icons/Pages/Overall_Models_Icon.png" class="home-card-icon" alt="Models">
+        <h3 data-i18n="nav_models">MODELS</h3>
+        <p data-i18n="home_models_desc">Binlerce AI modelini arayin ve filtreleyin</p>
+        <span class="home-card-btn" data-i18n="home_explore">Kesfet</span>
+      </a>
+      <a href="datasets.html" class="home-card">
+        <img src="Icons/Pages/Overall_Datasets_Icon.png" class="home-card-icon" alt="Datasets">
+        <h3 data-i18n="nav_datasets">DATASETS</h3>
+        <p data-i18n="home_datasets_desc">Egitim ve test icin datasetleri bulun</p>
+        <span class="home-card-btn" data-i18n="home_explore">Kesfet</span>
+      </a>
+      <a href="developer.html" class="home-card">
+        <img src="Icons/Pages/Overall_Developer_Bag_Icon.png" class="home-card-icon" alt="Developer Bag">
+        <h3 data-i18n="nav_developer">DEVELOPER BAG</h3>
+        <p data-i18n="home_dev_desc">Fine-tuning icin en iyi model ve datasetleri kesfedin</p>
+        <span class="home-card-btn" data-i18n="home_explore">Kesfet</span>
+      </a>
+    </div>
+  </div>
+
+  <footer class="footer" data-i18n-html="footer">
+    OVERALL &copy; 2026 | Veriler Hugging Face API ile cekilmektedir
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/stats.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>

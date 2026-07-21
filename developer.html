@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overall - Developer Bag</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">
+      <img src="Logos/Overall_Small_Logo.png" alt="Overall">
+      <div class="navbar-brand-text">
+        <span>OVERALL</span>
+        <small class="navbar-powered">Powered by <a href="https://huggingface.co" target="_blank">Hugging Face</a></small>
+      </div>
+    </a>
+    <div class="navbar-links">
+      <a href="models.html"><img src="Icons/Pages/Overall_Models_Icon.png" class="nav-icon"><span data-i18n="nav_models">MODELS</span></a>
+      <a href="datasets.html"><img src="Icons/Pages/Overall_Datasets_Icon.png" class="nav-icon"><span data-i18n="nav_datasets">DATASETS</span></a>
+      <a href="developer.html"><img src="Icons/Pages/Overall_Developer_Bag_Icon.png" class="nav-icon"><span data-i18n="nav_developer">DEVELOPER BAG</span></a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="page-header">
+      <h1 data-i18n="developer_title">DEVELOPER BAG</h1>
+      <p data-i18n="developer_desc">AI fine-tuning icin en iyi modelleri ve datasetleri kesfedin</p>
+    </div>
+
+    <div class="controls">
+      <div class="filter-group">
+        <select id="domain-filter" class="filter-select">
+          <option value="" data-i18n="select_domain">Domain Secin</option>
+          <option value="medical" data-i18n="domain_medical">Medical</option>
+          <option value="finance" data-i18n="domain_finance">Finance</option>
+          <option value="legal" data-i18n="domain_legal">Legal</option>
+          <option value="code" data-i18n="domain_code">Code</option>
+          <option value="education" data-i18n="domain_education">Education</option>
+          <option value="gaming" data-i18n="domain_gaming">Gaming</option>
+          <option value="ecommerce" data-i18n="domain_ecommerce">E-commerce</option>
+          <option value="science" data-i18n="domain_science">Science</option>
+          <option value="automotive" data-i18n="domain_automotive">Automotive</option>
+          <option value="energy" data-i18n="domain_energy">Energy</option>
+          <option value="agriculture" data-i18n="domain_agriculture">Agriculture</option>
+          <option value="media" data-i18n="domain_media">Media</option>
+        </select>
+        <select id="task-filter" class="filter-select">
+          <option value="" data-i18n="select_task">Gorev Secin</option>
+          <option value="text-classification" data-i18n="task_text_classification">Text Classification</option>
+          <option value="text-generation" data-i18n="task_text_generation">Text Generation</option>
+          <option value="question-answering" data-i18n="task_question_answering">Question Answering</option>
+          <option value="summarization" data-i18n="task_summarization">Summarization</option>
+          <option value="translation" data-i18n="task_translation">Translation</option>
+          <option value="image-classification" data-i18n="task_image_classification">Image Classification</option>
+          <option value="object-detection" data-i18n="task_object_detection">Object Detection</option>
+          <option value="automatic-speech-recognition" data-i18n="task_speech_recognition">Speech Recognition</option>
+          <option value="fill-mask" data-i18n="task_fill_mask">Fill Mask</option>
+          <option value="conversational" data-i18n="task_conversational">Conversational</option>
+          <option value="zero-shot-classification" data-i18n="task_zero_shot">Zero Shot Classification</option>
+        </select>
+        <select id="sort-rank-filter" class="filter-select">
+          <option value="downloads" data-i18n="rank_downloads">Downloads'a Gore</option>
+          <option value="likes" data-i18n="rank_likes">Likes'a Gore</option>
+        </select>
+      </div>
+      <button id="search-btn" class="btn" data-i18n="find_models">Ara</button>
+    </div>
+
+    <div id="dev-best3-section" class="rank-section" style="display:none">
+      <h2 class="section-title" data-i18n="best_3">En İyi 3</h2>
+      <div id="dev-best3-container"></div>
+    </div>
+
+    <div id="dev-worst3-section" class="rank-section" style="display:none">
+      <h2 class="section-title" data-i18n="worst_3">En Kötü 3</h2>
+      <div id="dev-worst3-container"></div>
+    </div>
+
+    <div id="dev-models-section">
+      <h2 class="section-title" data-i18n="best_models">En Iyi Modeller</h2>
+      <div id="dev-models-container"></div>
+    </div>
+
+    <div id="dev-datasets-section">
+      <h2 class="section-title" data-i18n="best_datasets">En Iyi Datasetler</h2>
+      <div id="dev-datasets-container"></div>
+    </div>
+  </div>
+
+  <footer class="footer" data-i18n-html="footer">
+    OVERALL &copy; 2026 | Veriler Hugging Face API ile cekilmektedir
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/developer.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>

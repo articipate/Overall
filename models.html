@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overall - Models</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">
+      <img src="Logos/Overall_Small_Logo.png" alt="Overall">
+      <div class="navbar-brand-text">
+        <span>OVERALL</span>
+        <small class="navbar-powered">Powered by <a href="https://huggingface.co" target="_blank">Hugging Face</a></small>
+      </div>
+    </a>
+    <div class="navbar-links">
+      <a href="models.html"><img src="Icons/Pages/Overall_Models_Icon.png" class="nav-icon"><span data-i18n="nav_models">MODELS</span></a>
+      <a href="datasets.html"><img src="Icons/Pages/Overall_Datasets_Icon.png" class="nav-icon"><span data-i18n="nav_datasets">DATASETS</span></a>
+      <a href="developer.html"><img src="Icons/Pages/Overall_Developer_Bag_Icon.png" class="nav-icon"><span data-i18n="nav_developer">DEVELOPER BAG</span></a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="page-header">
+      <h1 data-i18n="models_title">MODELS</h1>
+      <p data-i18n="models_desc">Hugging Face modellerini arayin ve filtreleyin</p>
+    </div>
+
+    <div class="controls">
+      <div class="search-box">
+        <input type="text" id="search-input" data-i18n="search_models" placeholder="Model ara... (ornek: llama, bert, whisper)">
+      </div>
+      <div class="filter-group">
+        <select id="task-filter" class="filter-select">
+          <option value="" data-i18n="all_tasks">Tum Gorevler</option>
+          <option value="text-generation" data-i18n="task_text_generation">Text Generation</option>
+          <option value="text-classification" data-i18n="task_text_classification">Text Classification</option>
+          <option value="text2text-generation">Text2Text Generation</option>
+          <option value="image-classification" data-i18n="task_image_classification">Image Classification</option>
+          <option value="text-to-image">Text to Image</option>
+          <option value="image-to-text">Image to Text</option>
+          <option value="object-detection" data-i18n="task_object_detection">Object Detection</option>
+          <option value="question-answering" data-i18n="task_question_answering">Question Answering</option>
+          <option value="summarization" data-i18n="task_summarization">Summarization</option>
+          <option value="translation" data-i18n="task_translation">Translation</option>
+          <option value="fill-mask" data-i18n="task_fill_mask">Fill Mask</option>
+          <option value="sentence-similarity">Sentence Similarity</option>
+          <option value="automatic-speech-recognition" data-i18n="task_speech_recognition">Speech Recognition</option>
+          <option value="text-to-speech">Text to Speech</option>
+          <option value="zero-shot-classification" data-i18n="task_zero_shot">Zero Shot Classification</option>
+        </select>
+        <select id="sort-filter" class="filter-select">
+          <option value="downloads" data-i18n="most_downloaded">En Cok Indirilen</option>
+          <option value="likes" data-i18n="most_liked">En Cok Begenilen</option>
+          <option value="trending" data-i18n="trending">Trendler</option>
+          <option value="lastModified" data-i18n="last_updated">Son Guncellenen</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="models-container"></div>
+
+    <div class="pagination">
+      <button id="prev-btn" disabled data-i18n="prev">ONCEKI</button>
+      <span id="page-info" style="padding:8px 16px;font-size:8px">Sayfa 1</span>
+      <button id="next-btn" data-i18n="next">SONRAKI</button>
+    </div>
+  </div>
+
+  <footer class="footer" data-i18n-html="footer">
+    OVERALL &copy; 2026 | Veriler Hugging Face API ile cekilmektedir
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/models.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>
