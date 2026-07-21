@@ -60,7 +60,7 @@
     var task = (dataset.tags && dataset.tags[0]) || "N/A";
     var downloads = formatNumber(dataset.downloads || 0);
     var likes = formatNumber(dataset.likes || 0);
-    var url = BASE_URL + "/" + dataset.id;
+    var url = BASE_URL + "/datasets/" + dataset.id;
     var author = dataset.id.indexOf('/') !== -1 ? dataset.id.split('/')[0] : '';
     var name = dataset.id.indexOf('/') !== -1 ? dataset.id.split('/').pop() : dataset.id;
     var lang = '';

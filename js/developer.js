@@ -19,7 +19,7 @@ function renderCard(item, type) {
   var task = item.pipeline_tag || (item.tags && item.tags[0]) || "N/A";
   var downloads = formatNumber(item.downloads || 0);
   var likes = formatNumber(item.likes || 0);
-  var url = BASE_URL + "/" + item.id;
+  var url = type === 'datasets' ? BASE_URL + "/datasets/" + item.id : BASE_URL + "/" + item.id;
   var author = item.id.indexOf('/') !== -1 ? item.id.split('/')[0] : '';
   var name = item.id.indexOf('/') !== -1 ? item.id.split('/').pop() : item.id;
 
@@ -57,7 +57,7 @@ function renderRankingCard(item, rank, type) {
   var task = item.pipeline_tag || (item.tags && item.tags[0]) || "N/A";
   var downloads = formatNumber(item.downloads || 0);
   var likes = formatNumber(item.likes || 0);
-  var url = BASE_URL + "/" + item.id;
+  var url = type === 'datasets' ? BASE_URL + "/datasets/" + item.id : BASE_URL + "/" + item.id;
   var author = item.id.indexOf('/') !== -1 ? item.id.split('/')[0] : '';
   var name = item.id.indexOf('/') !== -1 ? item.id.split('/').pop() : item.id;
 
