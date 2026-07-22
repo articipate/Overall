@@ -122,6 +122,17 @@ a:hover { color: var(--text-accent); }
   background: rgba(255, 204, 0, 0.1);
 }
 
+.nav-github-btn {
+  border-color: var(--accent-1) !important;
+  color: var(--accent-1) !important;
+}
+
+.nav-github-btn:hover {
+  background: var(--accent-1) !important;
+  color: var(--bg-primary) !important;
+  border-color: var(--accent-1) !important;
+}
+
 /* CONTAINER */
 .container {
   max-width: 1200px;
